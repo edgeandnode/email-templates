@@ -1,29 +1,20 @@
-import { Markdown } from "@react-email/markdown";
-import * as React from "react";
+import { Markdown } from '@react-email/markdown'
+import * as React from 'react'
 
-import { subscriptionsFooter } from "./subscriptions-footer";
+import { subscriptionsFooter } from './subscriptions-footer'
+import { emailCta } from './email-cta'
 
 export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
   return (
     <Markdown
       markdownCustomStyles={{
-        bold: {
-          display: "inline",
-          fontWeight: "bold",
-        },
-      }}
-      markdownContainerStyles={{
-        fontFamily:
-          'system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif',
-        padding: "24px",
-        whiteSpace: "pre-line",
-        background: "white",
-        lineHeight: 1.5,
+        bold: { display: 'inline', fontWeight: 600 },
+        link: { textDecoration: 'underline' },
       }}
     >
       {preprocessMarkdown(markdown)}
     </Markdown>
-  );
+  )
 }
 
 /**
@@ -31,18 +22,12 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
  * and we'll be more than fine with String.prototype.replace and inline styles
  * at least until AI takes our jobs.
  */
-const componentSubstitutions: (readonly [RegExp, string])[] = [
-  [
-    /\bemail-cta\b/g,
-    'style="padding: 8px; background: #6148E0; color: #fff; border-radius: 4px; text-decoration: none; font-weight: 500;"',
-  ],
-  subscriptionsFooter,
-];
+const componentSubstitutions: (readonly [RegExp, string])[] = [emailCta, subscriptionsFooter]
 
 function preprocessMarkdown(markdown: string) {
   for (const [pattern, substitution] of componentSubstitutions) {
-    markdown = markdown.replace(pattern, substitution);
+    markdown = markdown.replace(pattern, substitution)
   }
 
-  return markdown;
+  return markdown
 }

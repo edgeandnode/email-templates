@@ -1,4 +1,4 @@
-import { footer } from "./footer";
+import { footer } from './footer'
 
 const markdown = `
 
@@ -7,9 +7,6 @@ or contact us at [info@edgeandnode.com](mailto:info@edgeandnode.com).
 
 ${footer}
 
-`;
+`
 
-export const subscriptionsFooter = [
-  /<subscriptions-footer ?\/?>/g,
-  markdown.trim(),
-] as const;
+export const subscriptionsFooter = [/<subscriptions-footer ?\/?>/g, markdown.trim()] as const

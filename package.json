@@ -7,7 +7,6 @@
     "Piotr Monwid-Olechnowicz <hasparus@gmail.com>"
   ],
   "scripts": {
-    "build": "tsx src/build.tsx",
     "dev": "email dev",
     "export": "email export",
     "format": "prettier --write src/**/*.{ts,tsx} emails/**/*.tsx"
