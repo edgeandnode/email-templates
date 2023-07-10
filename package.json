@@ -1,0 +1,22 @@
+{
+  "name": "@edgeandnode/email-templates",
+  "private": true,
+  "version": "1.0.0",
+  "license": "ISC",
+  "contributors": [
+    "Piotr Monwid-Olechnowicz <hasparus@gmail.com>"
+  ],
+  "scripts": {
+    "build": "tsx src/build.tsx",
+    "dev": "email dev",
+    "export": "email export"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.0.7",
+    "@react-email/html": "^0.0.4",
+    "@react-email/markdown": "^0.0.2",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "react-email": "^1.9.4"
+  }
+}
