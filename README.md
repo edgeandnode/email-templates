@@ -14,8 +14,11 @@
 
 - The global footer is defined in `src/footer.ts`.
 
-- The `{{ wordsInCurlyBraces }}` are [Liquid](https://shopify.github.io/liquid/basics/introduction/) variables used by [Campaign Monitor](https://thegraph.createsend.com/overview/D24F7435362A3000).
+- The `{{ wordsInCurlyBraces }}` are [Liquid] variables used by [Campaign Monitor].
 
 - All `.tsx` files in the `emails/` at this point are the same and can be disregarded.
   - We use them to generate the HTML.
   - In the future, we can also build emails with custom designs.
+
+[liquid]: https://shopify.github.io/liquid/basics/introduction/
+[campaign monitor]: https://thegraph.createsend.com/overview/D24F7435362A3000
