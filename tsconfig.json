@@ -6,5 +6,6 @@
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "node"
-  }
+  },
+  "include": ["src/**/*", "emails/**/*", ".eslintrc.js"]
 }
