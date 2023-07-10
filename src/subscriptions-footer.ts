@@ -10,6 +10,6 @@ ${footer}
 `;
 
 export const subscriptionsFooter = [
-  /<subscriptions-footer ?\/?>/,
+  /<subscriptions-footer ?\/?>/g,
   markdown.trim(),
 ] as const;

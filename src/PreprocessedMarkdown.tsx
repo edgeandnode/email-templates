@@ -31,9 +31,9 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
  * and we'll be more than fine with String.prototype.replace and inline styles
  * at least until AI takes our jobs.
  */
-const componentSubstitutions = [
+const componentSubstitutions: (readonly [RegExp, string])[] = [
   [
-    "email-cta",
+    /\bemail-cta\b/g,
     'style="padding: 8px; background: #6148E0; color: #fff; border-radius: 4px; text-decoration: none; font-weight: 500;"',
   ],
   subscriptionsFooter,
@@ -41,12 +41,7 @@ const componentSubstitutions = [
 
 function preprocessMarkdown(markdown: string) {
   for (const [pattern, substitution] of componentSubstitutions) {
-    markdown = markdown.replace(
-      typeof pattern === "string"
-        ? new RegExp(`\\b${pattern}\\b`, "g")
-        : pattern,
-      substitution
-    );
+    markdown = markdown.replace(pattern, substitution);
   }
 
   return markdown;
