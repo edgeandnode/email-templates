@@ -11,6 +11,9 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
         bold: { display: 'inline', fontWeight: 600 },
         link: { textDecoration: 'underline' },
       }}
+      markdownContainerStyles={{
+        whiteSpace: 'pre-line',
+      }}
     >
       {preprocessMarkdown(markdown)}
     </Markdown>
