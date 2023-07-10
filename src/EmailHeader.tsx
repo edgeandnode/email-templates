@@ -1,4 +1,4 @@
-import { Img, Section, SectionProps, Text } from '@react-email/components'
+import { Img, Section, SectionProps } from '@react-email/components'
 import * as React from 'react'
 
 export function EmailHeader(props: SectionProps) {

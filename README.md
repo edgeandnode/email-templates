@@ -1,9 +1,21 @@
-# To-do
+# transactional email templates
 
-- [ ] Move this to a separate repo so technical non-engineer contributors can also contribute?
+## Workflow
 
-# Notes
+1. Make changes to the `.md` files in `emails/` directory.
+2. Run `pnpm install && pnpm export` to generate HTML files.
+3. Upload the files `out/` directory to Campaign Monitor.
 
-- Campaign monitor uses Liquid. This is not our own choice.
-- We need links in e-mails, so we keep a directory with HTMLs for quick preview.
-- Developers upload the exported Liquid HTMLs to Campaign Monitor.
+## What is this?
+
+- Email templates are defined in the `.md` files in `emails/` directory.
+
+- The subscriptions footer is defined in `src/subscriptions-footer.ts`.
+
+- The global footer is defined in `src/footer.ts`.
+
+- The `{{ wordsInCurlyBraces }}` are [Liquid](https://shopify.github.io/liquid/basics/introduction/) variables used by [Campaign Monitor](https://thegraph.createsend.com/overview/D24F7435362A3000).
+
+- All `.tsx` files in the `emails/` at this point are the same and can be disregarded.
+  - We use them to generate the HTML.
+  - In the future, we can also build emails with custom designs.
