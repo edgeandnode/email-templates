@@ -3,6 +3,8 @@
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "jsx": "react",
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node"
   }
 }

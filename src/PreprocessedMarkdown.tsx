@@ -1,6 +1,8 @@
 import { Markdown } from "@react-email/markdown";
 import * as React from "react";
 
+import { subscriptionsFooter } from "./subscriptions-footer";
+
 export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
   return (
     <Markdown
@@ -16,6 +18,7 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
         padding: "24px",
         whiteSpace: "pre-line",
         background: "white",
+        lineHeight: 1.5,
       }}
     >
       {preprocessMarkdown(markdown)}
@@ -28,18 +31,21 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
  * and we'll be more than fine with String.prototype.replace and inline styles
  * at least until AI takes our jobs.
  */
-const componentSubstitutions = {
-  "email-cta":
-    "padding: 8px; background: #6148E0; color: #fff; border-radius: 4px; text-decoration: none; font-weight: 500;",
-};
+const componentSubstitutions = [
+  [
+    "email-cta",
+    'style="padding: 8px; background: #6148E0; color: #fff; border-radius: 4px; text-decoration: none; font-weight: 500;"',
+  ],
+  subscriptionsFooter,
+];
 
 function preprocessMarkdown(markdown: string) {
-  for (const [componentName, componentStyle] of Object.entries(
-    componentSubstitutions
-  )) {
+  for (const [pattern, substitution] of componentSubstitutions) {
     markdown = markdown.replace(
-      new RegExp(`\\b${componentName}\\b`, "g"),
-      `style="${componentStyle}"`
+      typeof pattern === "string"
+        ? new RegExp(`\\b${pattern}\\b`, "g")
+        : pattern,
+      substitution
     );
   }
 
