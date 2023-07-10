@@ -1,5 +1,7 @@
 # transactional email templates
 
+![](./preview.png)
+
 ## Workflow
 
 1. Make changes to the `.md` files in `emails/` directory.
@@ -10,11 +12,13 @@
 
 - Email templates are defined in the `.md` files in `emails/` directory.
 
-- The subscriptions footer is defined in `src/subscriptions-footer.ts`.
-
-- The global footer is defined in `src/footer.ts`.
-
 - The `{{ wordsInCurlyBraces }}` are [Liquid] variables used by [Campaign Monitor].
+
+- Templates share components:
+
+  - The **global footer** is defined in `src/footer.ts`.
+  - The **subscriptions footer** is defined in `src/subscriptions-footer.ts`.
+  - The **header** is defined in `src/EmailHeader.tsx`.
 
 - All `.tsx` files in the `emails/` at this point are the same and can be disregarded.
   - We use them to generate the HTML.
