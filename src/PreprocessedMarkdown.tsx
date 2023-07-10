@@ -1,8 +1,8 @@
 import { Markdown } from '@react-email/markdown'
 import * as React from 'react'
 
-import { subscriptionsFooter } from './subscriptions-footer'
 import { emailCta } from './email-cta'
+import { subscriptionsFooter } from './subscriptions-footer'
 
 export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
   return (

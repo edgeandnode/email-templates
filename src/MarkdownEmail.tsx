@@ -1,17 +1,18 @@
-import { Html } from '@react-email/html'
 import { readFileSync } from 'fs'
+
+import { Body, Head } from '@react-email/components'
+import { Html } from '@react-email/html'
 import * as React from 'react'
 
-import { PreprocessedMarkdown } from './PreprocessedMarkdown'
 import { EmailHeader } from './EmailHeader'
-import { Body, Head } from '@react-email/components'
+import { PreprocessedMarkdown } from './PreprocessedMarkdown'
 
 export type MarkdownEmailProps = { template: string } | { path: string }
 
 export function MarkdownEmail({ filename }: { filename: string }) {
-  const [, rootDir, templateName] = filename.match(
+  const [, rootDir, templateName] = (
     filename.endsWith('_tsx.js') ? /(.*).react-email\/.*\/emails_(.*)_tsx\.js$/ : /(.*)\/out\/(.*)\.js$/
-  )!
+  ).exec(filename)!
 
   const template = readFileSync(`${rootDir}/emails/${templateName}.md`, 'utf8')
 
