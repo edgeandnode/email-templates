@@ -10,6 +10,10 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
       markdownCustomStyles={{
         bold: { display: 'inline', fontWeight: 600 },
         link: { textDecoration: 'underline' },
+        h1: {
+          fontSize: '1.5em',
+          margin: 0,
+        },
       }}
       markdownContainerStyles={{
         whiteSpace: 'pre-line',

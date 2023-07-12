@@ -1,3 +1,5 @@
+# Renew your plan
+
 Hello,
 
 Your monthly subscription for The Graph’s Consumer Plan is now **eligible for renewal**.

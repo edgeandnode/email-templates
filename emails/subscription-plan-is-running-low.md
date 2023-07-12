@@ -1,3 +1,5 @@
+# Subscription is running low
+
 Hello,
 
 We’ve noticed that your Consumer subscription plan for The Graph is running low. Currently, you have used {{ queriesUsed }} of your monthly queries, but still have {{ billingPeriodRemaining }} of your billing period remaining. Based on your current usage, we recommend upgrading your monthly quota to {{ recommendedMonthlyQuota }} million queries.
