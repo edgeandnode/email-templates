@@ -1,3 +1,5 @@
+# Subscription renewed
+
 Hello,
 
 Thank you for renewing your monthly subscription of The Graph’s Consumer Plan. Below are your plan details:

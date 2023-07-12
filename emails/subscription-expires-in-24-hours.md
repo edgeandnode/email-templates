@@ -1,3 +1,5 @@
+# Subscription expires in 24 hours
+
 Hello,
 
 Your monthly subscription for The Graph’s Consumer Plan **expires in 24 hours**. Please click below to renew your subscription.

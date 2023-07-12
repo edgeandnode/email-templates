@@ -26,7 +26,6 @@ export function MarkdownEmail({ filename }: { filename: string }) {
               font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
               padding: 24px;
               white-space: pre-line;
-              background: white;
               line-height: 1.5;
               max-width: 820px;
               margin: 0 auto;
@@ -34,12 +33,18 @@ export function MarkdownEmail({ filename }: { filename: string }) {
             img {
               max-width: 100%;
             }
+            @media (prefers-color-scheme: dark) {
+              body {
+                color: white;
+                color-scheme: dark;
+              }
+            }
           `,
           }}
         />
       </Head>
       <Body>
-        <EmailHeader style={{ marginBottom: '32px' }} />
+        <EmailHeader style={{ marginBottom: '8px' }} />
         <PreprocessedMarkdown markdown={template} />
       </Body>
     </Html>
