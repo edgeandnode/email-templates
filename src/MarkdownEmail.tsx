@@ -44,7 +44,7 @@ export function MarkdownEmail({ filename }: { filename: string }) {
         />
       </Head>
       <Body>
-        <EmailHeader style={{ marginBottom: '32px' }} />
+        <EmailHeader style={{ marginBottom: '8px' }} />
         <PreprocessedMarkdown markdown={template} />
       </Body>
     </Html>

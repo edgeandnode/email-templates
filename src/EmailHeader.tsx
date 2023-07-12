@@ -6,12 +6,11 @@ export function EmailHeader(props: SectionProps) {
     <Section {...props}>
       <Img
         src="https://assets.thegraph.com/email-header.jpg"
-        width={2000}
-        height={951}
         style={{
           marginBottom: '4px',
           aspectRatio: '2000 / 951',
-          height: (390 / 820).toFixed(4) + '%',
+          // adding height here fixes the layout shift in the preview
+          // but it breaks mobile gmail
         }}
       />
       <span style={{ fontWeight: 600 }}>The Graph Account</span>
