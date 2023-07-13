@@ -25,10 +25,11 @@ export function MarkdownEmail({ filename }: { filename: string }) {
             body { 
               font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
               padding: 24px;
-              white-space: pre-line;
               line-height: 1.5;
               max-width: 820px;
               margin: 0 auto;
+              color: black;
+              background: white;
             }
             img {
               max-width: 100%;
@@ -36,6 +37,7 @@ export function MarkdownEmail({ filename }: { filename: string }) {
             @media (prefers-color-scheme: dark) {
               body {
                 color: white;
+                background: #0c0a1d;
                 color-scheme: dark;
               }
             }

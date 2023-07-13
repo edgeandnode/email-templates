@@ -1,26 +1,25 @@
-import { Markdown } from '@react-email/markdown'
 import * as React from 'react'
 
 import { emailCta } from './email-cta'
+import { markdownToReactEmail } from './markdownToReactEmail'
 import { subscriptionsFooter } from './subscriptions-footer'
 
 export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
   return (
-    <Markdown
-      markdownCustomStyles={{
-        bold: { display: 'inline', fontWeight: 600 },
-        link: { textDecoration: 'underline' },
-        h1: {
-          fontSize: '1.4em',
-          margin: 0,
+    <div>
+      {markdownToReactEmail(preprocessMarkdown(markdown), {
+        markdownStyles: {
+          bold: { display: 'inline', fontWeight: 600 },
+          link: { textDecoration: 'underline' },
+          h1: {
+            fontSize: '1.4em',
+            margin: 0,
+          },
         },
-      }}
-      markdownContainerStyles={{
-        whiteSpace: 'pre-line',
-      }}
-    >
-      {preprocessMarkdown(markdown)}
-    </Markdown>
+        // TODO: Remove componentSubstitutions in favor of this
+        components: {},
+      })}
+    </div>
   )
 }
 
