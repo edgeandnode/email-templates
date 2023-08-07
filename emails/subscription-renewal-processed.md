@@ -10,6 +10,6 @@ Subgraph queries: {{ subgraphQueries }}
 Subscription end date: {{ subscriptionEndDate }} \
 Next renewal available: {{ nextRenewalDate }}
 
-If you’re ever concerned about running out of queries, keep in mind that you can always upgrade your existing subscription by selecting Manage Plan in Subgraph Studio.
+If you’re ever concerned about running out of queries, keep in mind that you can always upgrade your existing subscription by selecting Manage Plan in [Subgraph Studio](https://thegraph.com/billing/?show=manage).
 
 <subscriptions-footer />
