@@ -15,6 +15,10 @@ export function PreprocessedMarkdown({ markdown }: { markdown: string }) {
             fontSize: '1.4em',
             margin: 0,
           },
+          hr: {
+            border: 'none',
+            borderTop: '1px solid rgba(0, 0, 0, 0.1)',
+          },
         },
         // TODO: Remove componentSubstitutions in favor of this
         components: {},
