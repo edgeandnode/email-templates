@@ -26,7 +26,8 @@ export function MarkdownEmail({ filename }: { filename: string }) {
               font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
               padding: 24px;
               line-height: 1.5;
-              max-width: 820px;
+              max-width: 650px;
+              font-size: 16px;
               margin: 0 auto;
               color: black;
               background: white;
