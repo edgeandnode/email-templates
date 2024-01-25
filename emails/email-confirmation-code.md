@@ -4,7 +4,7 @@ Hello,
 
 Thank you for registering with us! To complete your registration and verify your email address, please enter the following confirmation code:
 
-Confirmation Code: # **{{ confirmationCode }}**
+# Confirmation Code: **{{ confirmationCode }}**
 
 This code will expire in 24 hours. Please enter it promptly to verify your email address and continue with verifying of your account.
 
