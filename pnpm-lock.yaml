@@ -14,15 +14,15 @@ dependencies:
   '@react-email/html':
     specifier: ^0.0.4
     version: 0.0.4
-  '@react-email/markdown':
-    specifier: ^0.0.2
-    version: 0.0.2(react-email@1.9.4)(react@18.2.0)
   '@types/node':
     specifier: ^20.4.1
     version: 20.4.1
   '@types/react':
     specifier: ^18.2.14
     version: 18.2.14
+  react:
+    specifier: ^18.2.0
+    version: 18.2.0
   react-email:
     specifier: ^1.9.4
     version: 1.9.4
@@ -682,16 +682,6 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       react: 18.2.0
-    dev: false
-
-  /@react-email/markdown@0.0.2(react-email@1.9.4)(react@18.2.0):
-    resolution: {integrity: sha512-1CCRbyHsCXWE0RL7tJ2ziNsuLtqYm9V5AXmA3IAFH9Da2MHl6IwqQtAgis+DDqagWjI16GSsGsRD/FHzyE6kTA==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      md-to-react-email: 2.0.1(react-email@1.9.4)(react@18.2.0)
-    transitivePeerDependencies:
-      - react
-      - react-email
     dev: false
 
   /@react-email/preview@0.0.6:
@@ -2931,16 +2921,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: false
-
-  /md-to-react-email@2.0.1(react-email@1.9.4)(react@18.2.0):
-    resolution: {integrity: sha512-X1BYy91p/vsJuZgVXI26H+Zp+DIu5E0EWtW2EjIN5shKSmXCda71TG4dzTZAU+Ef4t9tDR/VsTP0MjL8ZwzU1A==}
-    peerDependencies:
-      react: 18.2.0
-      react-email: 1.9.3
-    dependencies:
-      react: 18.2.0
-      react-email: 1.9.4
     dev: false
 
   /mdast-util-definitions@5.1.2:
