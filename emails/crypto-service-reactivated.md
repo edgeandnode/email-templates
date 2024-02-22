@@ -2,7 +2,7 @@
 
 Hello,
 
-Your billing balance on The Graph is now current, and you may now resume making queries. You have billing balance of {{ balance }} GRT, covering {{ queryFees }} GRT in query fees. Review your query activity any time on the Billing page in [Subgraph Studio](https://thegraph.com/studio/billing/).
+Your billing balance on The Graph is now current, and you may now resume making queries. You have a billing balance of {{ balance }} GRT, covering {{ queryFees }} GRT in query fees. Review your query activity any time on the Billing page in [Subgraph Studio](https://thegraph.com/studio/billing/).
 
 To avoid service interruption, please ensure your billing balance is greater than your incurred query fees.
 
