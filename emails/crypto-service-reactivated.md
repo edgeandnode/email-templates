@@ -6,7 +6,7 @@ Your billing balance on The Graph is now current, and you may now resume making 
 
 To avoid service interruption, please ensure your billing balance is greater than your incurred query fees.
 
-To learn more about The Graph's billing plans, see our Docs at [thegraph.com/docs/en/billing/](https://thegraph.com/docs/en/billing/).
+To learn more about The Graph's billing plans, see [The Graph Docs](https://thegraph.com/docs/en/billing/).
 
 Have any questions about your invoice? Please contact <a href="mailto:billing@edgeandnode.com">billing@edgeandnode.com</a>
 
