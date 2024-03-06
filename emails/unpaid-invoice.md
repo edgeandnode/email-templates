@@ -1,4 +1,4 @@
-# Your monthly free query queries on The Graph have run out
+# You have an unpaid invoice
 
 Hello,
 
