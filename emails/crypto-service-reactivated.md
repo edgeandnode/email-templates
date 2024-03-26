@@ -1,4 +1,4 @@
-# Service Reactivated
+# Service has resumed for your account
 
 Hello,
 

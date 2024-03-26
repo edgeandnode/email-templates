@@ -1,8 +1,8 @@
-# Payment successful: Your account accessing The Graph is active
+# Service has resumed for your account
 
 Hello,
 
-Thank you for using The Graph. Your payment of ${{ paymentReceivedAmountUSD }} was processed for your past month's usage with the credit card we have on file. You may review your invoice under the Billing tab in <a href="https://thegraph.com/studio/billing/">Subgraph Studio</a>.
+Thank you for using The Graph. Your service has been reacivated and you may resume making queries. Your credit card will be charged at the end of the month. Review your query activity any time under the API Keys tab in <a href="https://thegraph.com/studio/billing/">Subgraph Studio</a>.
 
 To learn more about The Graph's billing plans, see our Docs at https://thegraph.com/docs/en/billing/.
 
