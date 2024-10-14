@@ -2,7 +2,7 @@ export const footer = `
 
 Thanks,
 
-Edge & Node
+Edge & Node | Working on The Graph
 
 ---
 
